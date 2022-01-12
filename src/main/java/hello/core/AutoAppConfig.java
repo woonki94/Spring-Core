@@ -15,12 +15,12 @@ import org.springframework.context.annotation.FilterType;
 
 )
 public class AutoAppConfig {
-
+/***
     @Bean(name ="memoryMemberRepository") //@Configuration이 자동 등록 하는 빈과 같은 이름의 빈 등록 -> 수동 빈이 우선권을 갖는다. 현재 default는 중복되면 오류나도록
     MemberRepository memberRepository(){
         return new MemoryMemberRepository();
     }
 
-
+*/
 
 }
