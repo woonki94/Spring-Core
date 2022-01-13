@@ -10,8 +10,8 @@ import org.springframework.context.annotation.FilterType;
 
 @Configuration
 @ComponentScan(
-        basePackages = "hello.core.member",  //탐색할 패키지의 시작 위치를 지정.  Component Scan이 모든 프로젝트를 검색할경우 오래걸림, 특정 패키지만 탐색가능
-        excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class) //예제 코드를 살리기 위해 @Configuration 제외
+        basePackages = "hello.core"  //탐색할 패키지의 시작 위치를 지정.  Component Scan이 모든 프로젝트를 검색할경우 오래걸림, 특정 패키지만 탐색가능
+        ,excludeFilters = @ComponentScan.Filter(type = FilterType.ANNOTATION, classes = Configuration.class) //예제 코드를 살리기 위해 @Configuration 제외
 
 )
 public class AutoAppConfig {
